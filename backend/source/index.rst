@@ -1,18 +1,12 @@
-.. Disscussion Board documentation master file, created by
-   sphinx-quickstart on Sun Mar 16 15:44:45 2025.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+===================================
+Добро пожаловать в документацию DiscussionBoard
+===================================
 
-Disscussion Board documentation
-===============================
-
-Add your content using ``reStructuredText`` syntax. See the
-`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
-documentation for details.
+**DiscussionBoard** — это веб-форум с системой веток обсуждений, ролевыми правами пользователей и возможностью модерирования контента.
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Оглавление
 
    modules
    app.rst
@@ -20,3 +14,43 @@ documentation for details.
    app.routes.rst
    models.rst
    routes.rst
+
+------------------------
+
+О проекте
+=========
+
+**DiscussionBoard** предоставляет следующие возможности:
+
+- **Аутентификация и роли пользователей**: регистрация, вход, восстановление пароля, поддержка OAuth (Google, GitHub, Telegram).
+- **Создание и управление обсуждениями**: темы, комментарии, вложенные ответы, форматирование (Markdown/BBCode).
+- **Система модерирования**: блокировка пользователей, удаление сообщений, фильтрация спама.
+- **Категории и подфорумы**: гибкая структура разделов с настройками доступа.
+- **Система уведомлений**: оповещения о новых ответах, подписки, e-mail уведомления.
+- **Поиск**: полнотекстовый поиск с фильтрацией по параметрам.
+- **Личный кабинет**: редактирование профиля, подписки, история активности.
+- **Логирование и аналитика**: отчёты, статистика пользователей и активности.
+- **API**: REST API для интеграции с другими сервисами.
+
+Документация содержит подробное описание всех модулей, классов и функций, используемых в проекте.
+
+Начало работы
+=============
+
+Для локального развертывания выполните:
+
+.. code-block:: bash
+
+   git clone https://github.com/your-repo/DiscussionBoard.git
+   cd DiscussionBoard/backend
+   python -m venv .venv
+   source .venv/bin/activate  # Windows: .venv\Scripts\activate
+   pip install -r requirements.txt
+   uvicorn app.main:app --reload
+
+После успешного запуска форум будет доступен по адресу `http://127.0.0.1:8000`.
+
+Дальнейшие шаги
+===============
+
+Ознакомьтесь с подробной документацией по модулям и API в разделах ниже.

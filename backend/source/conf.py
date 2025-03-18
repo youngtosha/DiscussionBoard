@@ -12,7 +12,7 @@ sys.path.insert(0, os.path.abspath('../app'))
 sys.path.insert(0, os.path.abspath('../models'))
 sys.path.insert(0, os.path.abspath('../routes'))
 
-project = 'Disscussion Board'
+project = 'Discussion Board'
 copyright = '2025, Anton'
 author = 'Anton'
 release = '1'
